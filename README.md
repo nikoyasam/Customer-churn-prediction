@@ -1,51 +1,26 @@
-Customer Churn Prediction
-Project Overview
-This project builds a machine learning model to predict customer churn for a telecom company using the IBM Telco Customer Churn Dataset. The goal is to identify customers who are likely to leave the service, enabling the business to take proactive retention actions.
+# Customer Churn Prediction
 
-Features
-Data cleaning and preprocessing including handling missing values and encoding categorical variables.
+## About This Project
 
-Model training using Logistic Regression and Decision Tree classifiers.
+This project develops a machine learning model to predict customer churn for a telecom company using the **IBM Telco Customer Churn Dataset**. The objective is to identify customers who are likely to leave the service, enabling the company to proactively engage retention strategies.
 
-Model evaluation using accuracy, ROC-AUC, confusion matrix, and classification reports.
+The project demonstrates the full ML pipeline, including data preprocessing, model training, evaluation, and deployment via a user-friendly Streamlit dashboard for real-time predictions on new data.
 
-Feature importance analysis to understand key drivers of churn.
+---
 
-Streamlit dashboard for uploading new data and getting churn predictions interactively.
+## Features
 
-Saved model for easy deployment and reuse.
+- **Data Preprocessing:** Handling missing values, encoding categorical variables, scaling numerical features.
+- **Model Training:** Logistic Regression and Decision Tree classifiers.
+- **Model Evaluation:** Metrics including accuracy, ROC-AUC, confusion matrix, and classification reports.
+- **Feature Importance:** Analysis to understand key churn drivers.
+- **Interactive Dashboard:** Streamlit app to upload new customer data and get churn predictions.
+- **Model Persistence:** Saving and loading trained models for reuse.
 
-Dataset
-Source: IBM Telco Customer Churn Dataset (publicly available on Kaggle and IBM)
+---
 
-Data Description: Includes customer demographics, account information, service usage, and churn label.
+## Dataset
 
-Preprocessing: Numeric conversion, missing value imputation, one-hot encoding, feature scaling.
-
-How to Run
-
-1. Training the Model
-Run the notebook customer_churn_model.ipynb to:
-
-Load and preprocess data
-
-Train and evaluate models
-
-Save the trained model as logistic_regression_model.joblib
-
-2. Using the Streamlit Dashboard
-
-Run the app to upload new customer data CSV and get churn predictions:
-
-streamlit run app.py
-
-
-File Structure
-
-.
-├── customer_churn_model.ipynb       # Jupyter notebook with model training code
-├── logistic_regression_model.joblib # Saved trained model
-├── app.py                          # Streamlit dashboard app             
-├── README.md                      # Project documentation
-└── data                           # Folder for datasets
-
+- **Source:** IBM Telco Customer Churn Dataset (available on [Kaggle](https://www.kaggle.com/blastchar/telco-customer-churn))
+- **Contents:** Customer demographics, account info, service usage, and churn labels.
+- **Preprocessing:** Numeric conversion, missing value imputation, one-hot encoding, and feature scaling.
